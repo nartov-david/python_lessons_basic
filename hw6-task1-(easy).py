@@ -60,9 +60,9 @@ class WorkCar(Car):
 
 
 class PoliceCar(Car):
-    def __init__(self, phone_model):
+    def __init__(self, car_name):
+        super().__init__(car_name)
         self.is_police = True
-
 
 my_car_1 = Car('lada-2114')
 
