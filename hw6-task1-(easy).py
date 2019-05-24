@@ -47,21 +47,20 @@ class Car:
                 break
 
 
-class TownCar:
+class TownCar(Car):
     pass
 
 
-class SportCar:
+class SportCar(Car):
     pass
 
 
-class WorkCar:
+class WorkCar(Car):
     pass
 
 
-class PoliceCar:
+class PoliceCar(Car):
     def __init__(self, phone_model):
-        super().__init__(phone_model)
         self.is_police = True
 
 
